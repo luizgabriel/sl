@@ -11,8 +11,7 @@ int main()
     a = alloc_matrix(n, n + 1);
     x = alloc_vector(n);
 
-    if (a == NULL || x == NULL)
-    {
+    if (a == NULL || x == NULL) {
         printf("Sem memoria suficiente.\n");
         return 1;
     }
@@ -25,12 +24,9 @@ int main()
     print_matrix(a, n, n + 1);
 
     type = sl_retro(a, n, x);
-    if (type == SL_RESULT_INCOMPATIBLE)
-    {
+    if (type == SL_RESULT_INCOMPATIBLE) {
         printf("Sistema Linear INCOMPATIVEL!\n");
-    }
-    else
-    {
+    } else {
         if (type == SL_RESULT_UNDEFINED) {
             printf("Sistema Linear INDETERMINADO\n");
         } else {
@@ -39,6 +35,6 @@ int main()
 
         print_vector(x, n);
     }
-    
+
     return 0;
 }
