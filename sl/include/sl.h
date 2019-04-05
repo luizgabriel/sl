@@ -3,7 +3,6 @@
 
 #include "sl/alloc.h"
 #include "sl/io.h"
-#include "sl/transform.h"
-#include "sl/result.h"
+#include "sl/solving.h"
 
 #endif

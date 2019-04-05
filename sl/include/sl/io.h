@@ -4,7 +4,13 @@
 #include <stdio.h>
 
 void print_vector(double *v, int n);
+
 void print_matrix(double **m, int l, int c);
+
 void read_matrix(double **m, int l, int c);
+
+void print_poli(double *v, int n);
+
+void read_vector(double *v, int n);
 
 #endif
